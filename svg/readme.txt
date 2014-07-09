@@ -1,0 +1,1 @@
+folder and home are public domain icons from the Tango library.
