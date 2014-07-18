@@ -210,7 +210,7 @@
 +	jvm = apv_get_cached_jvm();
 +	(*jvm)->GetEnv(jvm, (void**)&jni_env, JNI_VERSION_1_4);
 +
-+	pdf_class = (*jni_env)->FindClass(jni_env, "io/github/droidapps/lib/pdf/PDF");
++	pdf_class = (*jni_env)->FindClass(jni_env, "cx/hell/android/lib/pdf/PDF");
 +
 +	if (!jni_ids_cached) {
 +		getCmapData_method_id = (*jni_env)->GetStaticMethodID(jni_env, pdf_class, "getCmapData", "(Ljava/lang/String;)[B");

@@ -201,7 +201,7 @@ Java_io_github_droidapps_lib_pdf_PDF_parseFileDescriptor(
  * @return page count or -1 on error
  */
 JNIEXPORT jint JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_getPageCount(
+Java_cx_hell_android_lib_pdf_PDF_getPageCount(
 		JNIEnv *env,
 		jobject this) {
 	pdf_t *pdf = NULL;
@@ -215,7 +215,7 @@ Java_io_github_droidapps_lib_pdf_PDF_getPageCount(
 
 
 JNIEXPORT jintArray JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_renderPage(
+Java_cx_hell_android_lib_pdf_PDF_renderPage(
         JNIEnv *env,
         jobject this,
         jint pageno,
@@ -267,7 +267,7 @@ Java_io_github_droidapps_lib_pdf_PDF_renderPage(
 
 
 JNIEXPORT jint JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_getPageSize(
+Java_cx_hell_android_lib_pdf_PDF_getPageSize(
         JNIEnv *env,
         jobject this,
         jint pageno,
@@ -302,7 +302,7 @@ Java_io_github_droidapps_lib_pdf_PDF_getPageSize(
  * Get document outline.
  */
 JNIEXPORT jobject JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_getOutlineNative(
+Java_cx_hell_android_lib_pdf_PDF_getOutlineNative(
         JNIEnv *env,
         jobject this) {
     int error;
@@ -333,7 +333,7 @@ Java_io_github_droidapps_lib_pdf_PDF_getOutlineNative(
  * Get current netto heap size.
  */
 JNIEXPORT jint JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_getHeapSize(
+Java_cx_hell_android_lib_pdf_PDF_getHeapSize(
         JNIEnv *env,
         jobject this) {
     pdf_t *pdf = NULL;
@@ -349,7 +349,7 @@ Java_io_github_droidapps_lib_pdf_PDF_getHeapSize(
  * Frees memory directly associated with this pdf_t instance. Does not destroy fitz_context.
  */
 JNIEXPORT void JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_freeMemory(
+Java_cx_hell_android_lib_pdf_PDF_freeMemory(
         JNIEnv *env,
         jobject this) {
     pdf_t *pdf = NULL;
@@ -371,7 +371,7 @@ Java_io_github_droidapps_lib_pdf_PDF_freeMemory(
 
 #if 0
 JNIEXPORT void JNICALL
-Java_io_github_droidapps_pdfview_PDF_export(
+Java_cx_hell_android_pdfview_PDF_export(
         JNIEnv *env,
         jobject this) {
     pdf_t *pdf = NULL;
@@ -440,7 +440,7 @@ Java_io_github_droidapps_pdfview_PDF_export(
 
 /* TODO: Specialcase searches for 7-bit text to make them faster */
 JNIEXPORT jobject JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_find(
+Java_cx_hell_android_lib_pdf_PDF_find(
         JNIEnv *env,
         jobject this,
         jstring text,
@@ -579,7 +579,7 @@ Java_io_github_droidapps_lib_pdf_PDF_find(
  * Return text of given page.
  */
 JNIEXPORT jobject JNICALL
-Java_io_github_droidapps_lib_pdf_PDF_getText(
+Java_cx_hell_android_lib_pdf_PDF_getText(
         JNIEnv *env,
         jobject this,
         jint pageno) {
@@ -611,7 +611,7 @@ jobject create_find_result(JNIEnv *env) {
     static int jni_ids_cached = 0;
     jobject findResultObject = NULL;
 
-    findResultClass = (*env)->FindClass(env, "io/github/droidapps/lib/pagesview/FindResult");
+    findResultClass = (*env)->FindClass(env, "cx/hell/android/lib/pagesview/FindResult");
 
     if (findResultClass == NULL) {
         __android_log_print(ANDROID_LOG_ERROR, PDFVIEW_LOG_TAG, "create_find_result: FindClass returned NULL");
@@ -716,7 +716,7 @@ void add_find_result_marker(JNIEnv *env, jobject findResult, int x0, int y0, int
     static unsigned char jni_ids_cached = 0;
     if (!jni_ids_cached) {
         jclass findResultClass = NULL;
-        findResultClass = (*env)->FindClass(env, "io/github/droidapps/lib/pagesview/FindResult");
+        findResultClass = (*env)->FindClass(env, "cx/hell/android/lib/pagesview/FindResult");
         if (findResultClass == NULL) {
             __android_log_print(ANDROID_LOG_ERROR, PDFVIEW_LOG_TAG, "add_find_result_marker: FindClass returned NULL");
             return;
@@ -910,7 +910,7 @@ jobject create_outline_recursive(JNIEnv *env, jclass outline_class, const fz_out
     if (outline == NULL) return NULL;
 
     if (outline_class == NULL) {
-        outline_class = (*env)->FindClass(env, "io/github/droidapps/lib/pdf/PDF$Outline");
+        outline_class = (*env)->FindClass(env, "cx/hell/android/lib/pdf/PDF$Outline");
         if (outline_class == NULL) {
             __android_log_print(ANDROID_LOG_ERROR, PDFVIEW_LOG_TAG, "can't find outline class");
             return NULL;
@@ -940,14 +940,14 @@ jobject create_outline_recursive(JNIEnv *env, jclass outline_class, const fz_out
             return NULL;
         }
         // __android_log_print(ANDROID_LOG_DEBUG, PDFVIEW_LOG_TAG, "got page field id");
-        next_field_id = (*env)->GetFieldID(env, outline_class, "next", "Lio/github/droidapps/lib/pdf/PDF$Outline;");
+        next_field_id = (*env)->GetFieldID(env, outline_class, "next", "Lcx/hell/android/lib/pdf/PDF$Outline;");
         if (next_field_id == NULL) {
             (*env)->DeleteLocalRef(env, outline_class);
             __android_log_print(ANDROID_LOG_ERROR, PDFVIEW_LOG_TAG, "create_outline_recursive: couldn't get field id for Outline.next");
             return NULL;
         }
         // __android_log_print(ANDROID_LOG_DEBUG, PDFVIEW_LOG_TAG, "got down field id");
-        down_field_id = (*env)->GetFieldID(env, outline_class, "down", "Lio/github/droidapps/lib/pdf/PDF$Outline;");
+        down_field_id = (*env)->GetFieldID(env, outline_class, "down", "Lcx/hell/android/lib/pdf/PDF$Outline;");
         if (down_field_id == NULL) {
             (*env)->DeleteLocalRef(env, outline_class);
             __android_log_print(ANDROID_LOG_ERROR, PDFVIEW_LOG_TAG, "create_outline_recursive: couldn't get field id for Outline.down");
