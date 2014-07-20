@@ -4,11 +4,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
-
-// # 
 import android.util.Log;
 import android.view.View;
-// # 
 
 /**
  * Find newer methods using reflection and call them if found.

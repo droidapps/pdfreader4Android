@@ -17,12 +17,10 @@ import android.os.ParcelFileDescriptor;
 
 import io.github.droidapps.lib.pagesview.FindResult;
 
-// # 
 import java.util.ArrayList;
 import java.util.Stack;
 import io.github.droidapps.lib.view.TreeView;
 import io.github.droidapps.lib.view.TreeView.TreeNode;
-// # 
 
 
 /**
