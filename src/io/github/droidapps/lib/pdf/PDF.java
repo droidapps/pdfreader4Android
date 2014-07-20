@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pdf;
+package io.github.droidapps.lib.pdf;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -15,13 +15,13 @@ import android.content.res.AssetManager;
 import android.util.Log;
 import android.os.ParcelFileDescriptor;
 
-import cx.hell.android.lib.pagesview.FindResult;
+import io.github.droidapps.lib.pagesview.FindResult;
 
 // # 
 import java.util.ArrayList;
 import java.util.Stack;
-import cx.hell.android.lib.view.TreeView;
-import cx.hell.android.lib.view.TreeView.TreeNode;
+import io.github.droidapps.lib.view.TreeView;
+import io.github.droidapps.lib.view.TreeView.TreeNode;
 // # 
 
 

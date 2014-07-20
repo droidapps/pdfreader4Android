@@ -1,4 +1,4 @@
-package cx.hell.android.lib.view;
+package io.github.droidapps.lib.view;
 
 // # 
 
@@ -23,7 +23,7 @@ import io.github.droidapps.pdfreader.R;
 /**
  * Simple tree view used by APV for Table of Contents.
  * 
- * This class' package is cx.hell.android.lib.view, since TreeView might be reusable in other projects.
+ * This class' package is io.github.droidapps.lib.view, since TreeView might be reusable in other projects.
  * 
  * TODO: move data handling (getItemAtPosition) from TreeView to TreeAdapter,
  * 	     as it should be; TreeView should query TreeAdapter, not other way around :/
@@ -31,7 +31,7 @@ import io.github.droidapps.pdfreader.R;
  */
 public class TreeView extends ListView {
 	
-	public final static String TAG = "cx.hell.android.lib.view";
+	public final static String TAG = "io.github.droidapps.lib.view";
 	
 	/**
 	 * Tree node model. Contains links to first child and to next element.

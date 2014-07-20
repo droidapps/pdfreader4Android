@@ -5,7 +5,7 @@ import java.io.FileDescriptor;
 import android.content.res.AssetFileDescriptor;
 import android.test.InstrumentationTestCase;
 import android.util.Log;
-import cx.hell.android.lib.pdf.PDF;
+import io.github.droidapps.lib.pdf.PDF;
 
 public class TestOpen extends InstrumentationTestCase {
 		

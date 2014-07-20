@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pagesview;
+package io.github.droidapps.lib.pagesview;
 
 import java.util.Map;
 

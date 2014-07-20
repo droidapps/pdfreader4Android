@@ -11,11 +11,11 @@ import java.util.Map;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.util.Log;
-import cx.hell.android.lib.pagesview.OnImageRenderedListener;
-import cx.hell.android.lib.pagesview.PagesProvider;
-import cx.hell.android.lib.pagesview.RenderingException;
-import cx.hell.android.lib.pagesview.Tile;
-import cx.hell.android.lib.pdf.PDF;
+import io.github.droidapps.lib.pagesview.OnImageRenderedListener;
+import io.github.droidapps.lib.pagesview.PagesProvider;
+import io.github.droidapps.lib.pagesview.RenderingException;
+import io.github.droidapps.lib.pagesview.Tile;
+import io.github.droidapps.lib.pdf.PDF;
 
 /**
  * Provide rendered bitmaps of pages.

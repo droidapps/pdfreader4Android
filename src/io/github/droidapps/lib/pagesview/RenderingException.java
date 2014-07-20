@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pagesview;
+package io.github.droidapps.lib.pagesview;
 
 public class RenderingException extends Exception {
 	private static final long serialVersionUID = 1010978161527539002L;

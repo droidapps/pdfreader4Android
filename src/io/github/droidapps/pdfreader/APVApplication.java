@@ -2,7 +2,7 @@ package io.github.droidapps.pdfreader;
 
 import android.app.Application;
 import android.util.Log;
-import cx.hell.android.lib.pdf.PDF;
+import io.github.droidapps.lib.pdf.PDF;
 
 public class APVApplication extends Application {
     

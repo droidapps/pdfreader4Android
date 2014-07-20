@@ -51,20 +51,18 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import cx.hell.android.lib.pagesview.FindResult;
-import cx.hell.android.lib.pagesview.PagesView;
-import cx.hell.android.lib.pdf.PDF;
+import io.github.droidapps.lib.pagesview.FindResult;
+import io.github.droidapps.lib.pagesview.PagesView;
+import io.github.droidapps.lib.pdf.PDF;
 
-// # 
 import java.util.Map;
 import android.content.DialogInterface.OnDismissListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ScrollView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import cx.hell.android.lib.pdf.PDF.Outline;
-import cx.hell.android.lib.view.TreeView;
-// # 
+import io.github.droidapps.lib.pdf.PDF.Outline;
+import io.github.droidapps.lib.view.TreeView;
 
 
 /**
