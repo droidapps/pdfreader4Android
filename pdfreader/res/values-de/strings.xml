@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- #  -->
+<!-- <string name="app_name">PDF Reader</string> -->
+<!--  #  -->
+
+<!-- #  -->
+<string name="app_name">PDF Reader</string>
+<!--  #  -->
+
+	<string name="about">Über</string>
+	<string name="goto_page">Gehe zu Seite…</string>
+	<string name="goto_page_dialog_title">Seite auswählen</string>
+	<string name="goto_page_go_button">Los</string>
+	<string name="rotate_page_left">Nach links drehen</string>
+	<string name="rotate_page_right">Nach rechts drehen</string>
+	<string name="find_text">Suchen…</string>
+	<string name="find_dialog_title">Text suchen</string>
+	<string name="find_go_button">Suchen</string>
+	<string name="find_cancel_button">Abbrechen</string>
+	<string name="clear_find_text">Suche leeren</string>
+	<string name="choose_file">Öffnen…</string>
+	<string name="toggle_invert">Invertierte Farben</string>
+	<string name="toggle_fine_zoom">Toggle fine zoom</string>
+	<string name="set_as_home">Diesen Ordner als Home setzen</string>
+	<string name="go_home">Home</string>
+	<string name="cancel">Abbrechen</string>
+	<string name="searching_for">Suche nach "%1$s"</string>
+	<string name="page_of">Seite %1$d von %2$d</string>
+	<string name="options">Einstellungen</string>
+	<string name="zoom_animation">Zoom Buttons</string>
+	<string-array name="zoom_animations">
+		<item>100</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="zoom_animation_labels">
+		<item>deaktiviert</item>
+		<item>versteckt</item>
+		<item>transparent</item>
+		<item>ausblenden</item>
+	</string-array>
+	<string name="default_zoom_animation">2</string> 
+	<string name="page_animation">Seitenzahl Anzeige</string>
+	<string-array name="page_animations">
+		<item>100</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="page_animation_labels">
+		<item>deaktiviert</item>
+		<item>versteckt</item>
+		<item>transparent</item>
+		<item>ausblenden</item>
+		<item>immer zeigen</item>
+	</string-array>
+	<string name="default_page_animation">2</string> 
+	<string name="fade_speed">Ausblendegeschwindigkeit Zoom Buttons/Seitenzahl</string>
+	<string-array name="fade_speeds">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+	</string-array>
+	<string-array name="fade_speed_labels">
+		<item>1 Sekunde</item>
+		<item>2 Sekunden</item>
+		<item>3 Sekunden</item>
+		<item>4 Sekunden</item>
+		<item>5 Sekunden</item>
+		<item>6 Sekunden</item>
+		<item>7 Sekunden</item>
+	</string-array>
+	<string name="default_fade_speed">7</string> 
+	<string name="invert">Farben invertieren</string>
+	<string name="dirs_first">Zeige Ordner zuerst</string>
+	<string name="show_extension">Dateierweiterung .pdf anzeigen</string>
+	<string name="orientation">Ausrichtung</string>
+	<string name="default_orientation">0</string>
+	<string-array name="orientation_labels">
+	<item>automatisch</item>
+	<item>verzögert</item>
+	<item>Hochformat</item>
+	<item>Querformat</item>
+	</string-array>
+	<string-array name="orientations">
+	<item>0</item>
+	<item>3</item>
+	<item>1</item>
+	<item>2</item>
+	</string-array>
+	<string name="viewer">PDF Reader</string>
+	<string name="selector">Datei Browser</string>
+	<string name="fullscreen">Vollbild</string>
+	<string name="render_ahead">Vorausladen</string>
+	<string name="render_ahead_sub">Braucht mehr Speicher aber ermöglicht schnelleres Weiterscrollen.</string>
+	<string name="gray">Graustufen</string>
+	<string name="gray_sub">Keine Farben, etwas langsamer, braucht aber weniger Speicher.</string>
+	<string name="page">Seite</string>
+	<string name="color_mode">Darstellungsmodus</string>
+	<string-array name="color_mode_labels">
+		<item>Normal</item>
+		<item>Invertierte Farben</item>
+		<item>Schwarz-Weiß</item>
+		<item>Schwarz-Weiß invertiert</item>
+		<item>Schwarz auf Gelb</item>
+		<item>Grün auf Schwarz</item>
+		<item>Rot auf Schwarz</item>
+	</string-array>
+	<string-array name="color_modes">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+	</string-array>
+	<string name="default_color_mode">0</string>
+	<string name="omit_images">Keine Grafiken laden</string>
+	<string name="vertical_scroll_lock">Horizontales Scrollen sperren</string>
+	<string name="vertical_scroll_lock_sub">Zum horizontalen Scrollen um mindestens 1/5 der Bildschirmbreite scrollen.</string>
+	<string name="box">PDF page box type</string> 
+	<string-array name="box_labels">
+		<item>ArtBox</item>
+		<item>BleedBox</item>
+		<item>CropBox</item>
+		<item>MediaBox</item>
+		<item>TrimBox</item>
+	</string-array>
+	<string-array name="boxes">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	<string name="default_box">2</string>
+	<string name="extra_cache">Zusätzlicher Cache Speicher</string> 
+	<string name="extra_cache_sub">Zusätzlicher Cache Speicher kann flüssigeres Scrollen ermöglichen auf Kosten der Stabilität.</string> 
+	<string-array name="extra_caches">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>10</item>
+	</string-array>
+	<string-array name="extra_cache_labels">
+		<item>none</item>
+		<item>1 MB</item>
+		<item>2 MB</item>
+		<item>4 MB</item>
+		<item>6 MB</item>
+		<item>8 MB</item>
+		<item>10 MB</item>
+	</string-array>
+	<string name="default_extra_cache">0</string>
+	<string name="side_margin">Zusätzliche Seitenränder</string>	
+	<string name="default_side_margin">0</string>
+		<string-array name="margins">
+	<item>0</item>
+	<item>5</item>
+	<item>10</item>
+	<item>20</item>
+	</string-array>
+		<string-array name="margin_labels">
+	<item>kein</item>
+	<item>schmall</item>
+	<item>breit</item>
+	<item>sehr breit</item>
+	</string-array>
+	<string name="top_margin">Abstand zwischen den Seiten</string>
+	<string name="default_top_margin">10</string>
+	<string name="remove_from_recent">Entferne aus zuletzt verwendete Dokumente</string>
+	<string name="delete">Datei löschen</string>
+	<string-array name = "double_tap_actions">
+	<item>0</item>
+	<item>1</item>
+	<item>2</item>
+	</string-array>
+	<string-array name="double_tap_action_labels">
+	<item>keine Aktion</item>
+	<item>Heranzoomen</item>
+	<item>Heranzoomen und wieder herauszoomen</item>
+	</string-array>
+	<string name="default_double_tap_action">2</string>
+	<string name="double_tap_action">Double Tap</string>
+	<string-array name = "action_pairs">
+	<item>0</item>
+	<item>1</item>
+	<item>2</item>
+	<item>9</item>
+	<item>3</item>
+	<item>4</item>
+	<item>5</item>
+	<item>6</item>
+	<item>7</item>
+	<item>8</item>
+	<item>10</item>
+	<item>11</item>
+	<item>12</item>
+	</string-array>
+	<string-array name = "action_pair_labels">
+	<item>keine Aktion</item>
+	<item>Bildschirm hoch/runter</item>
+	<item>Seite hoch/runter</item>
+	<item>nächste/vorherige Seite</item>
+	<item>zoom 1.02X</item>
+	<item>zoom 1.05X</item>
+	<item>zoom 1.1X</item>
+	<item>zoom 1.2X</item>
+	<item>zoom 1.414X</item>
+	<item>zoom 2X</item>
+	<item>Bildschirm hoch/runter invertiert</item>
+	<item>Seite hoch/runter invertiert</item>
+	<item>nächste/vorherige Seite invertiert</item>
+	</string-array>
+	<string name="volume_pair">Volume -/+ Tasten</string>
+	<string name="up_down_pair">hoch/runter Tasten</string>
+	<string name="left_right_pair">rechts/links Tasten</string>
+	<string name="zoom_pair">Zoom Button</string>
+	<string name="long_zoom_pair">Zoom Button lange gedrückt</string>
+	<string name="right_up_down_pair">Nook Touch rechte hoch/runter Tasten</string>
+	<string name="top_bottom_tap_pair">Tap oben/unten</string>
+	<string name="default_volume_pair">1</string>
+	<string name="default_up_down_pair">1</string>
+	<string name="default_left_right_pair">2</string>
+	<string name="default_zoom_pair">7</string>
+	<string name="default_long_zoom_pair">8</string>
+	<string name="default_right_up_down_pair">1</string>
+	<string name="default_top_bottom_tap_pair">0</string>
+	<string name="hw">Hadware spezifische Einstellungen</string>
+	<string name="eink">Optimierung für E-ink</string>
+	<string name="nook2">Nook2 schnelle E-ink Aktualisierung</string>
+	<string name="disabled">Deaktiviert</string>
+	<string name="keep_on">Bildschirm während dem Lesen anlassen</string>
+	<string name="show_zoom_on_scroll">Zeige Zoom Buttons beim Scrollen</string>
+	<string name="history">Zeige zuletzt verwendete Dateien</string>
+    <string name="table_of_contents">Inhalt</string>
+    <string name="toc_dialog_title">Inhalt</string>
+    <string name="close">Schließe</string>
+    <string name="text_reflow">Textansicht</string>
+</resources>
