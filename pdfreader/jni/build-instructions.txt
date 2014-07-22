@@ -1,2 +1,0 @@
-To build the libraries the first time, run ../scripts/build-native.sh
-Afterwards, you can just do ndk-build
