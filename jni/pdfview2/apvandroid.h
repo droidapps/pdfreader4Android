@@ -28,10 +28,5 @@ void add_find_result_to_list(JNIEnv *env, jobject *list, jobject find_result);
 int find_next(JNIEnv *env, jobject this, int direction);
 
 
-// #ifdef pro
 jobject create_outline_recursive(JNIEnv *env, jclass outline_class, const fz_outline *outline);
 char* extract_text(pdf_t *pdf, int pageno);
-// #endif
-
-
-
