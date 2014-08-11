@@ -708,7 +708,6 @@ void append_chars(char **buf, size_t *buf_size, const char *new_chars, size_t ne
 }
 
 
-// #ifdef pro
 /**
  * Extract text from given pdf page.
  * Returns dynamically allocated string to be freed by caller or NULL.
@@ -770,7 +769,6 @@ char* extract_text(pdf_t *pdf, int pageno) {
     // __android_log_print(ANDROID_LOG_DEBUG, PDFVIEW_LOG_TAG, "extracted text, len: %d, chars: %s", text_len, text);
     return text;
 }
-// #endif
 
 
 
