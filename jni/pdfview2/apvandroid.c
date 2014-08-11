@@ -297,7 +297,6 @@ Java_io_github_droidapps_lib_pdf_PDF_getPageSize(
 }
 
 
-// #ifdef pro
 /**
  * Get document outline.
  */
@@ -326,7 +325,6 @@ Java_io_github_droidapps_lib_pdf_PDF_getOutlineNative(
     // __android_log_print(ANDROID_LOG_DEBUG, PDFVIEW_LOG_TAG, "joutline converted");
     return joutline;
 }
-// #endif
 
 
 /**
@@ -574,7 +572,6 @@ Java_io_github_droidapps_lib_pdf_PDF_find(
 
 
 
-// #ifdef pro
 /**
  * Return text of given page.
  */
@@ -597,7 +594,6 @@ Java_io_github_droidapps_lib_pdf_PDF_getText(
     if (text) free(text);
     return jtext;
 }
-// #endif
 
 
 /**
