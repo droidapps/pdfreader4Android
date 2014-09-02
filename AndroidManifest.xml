@@ -37,7 +37,7 @@
 
     <!-- 4 is 1.6 or later, that's more than 99% of devices -->
 	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="17"/>
-
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:minSdkVersion="19"/>
 	<supports-screens
             android:smallScreens="true"
             android:normalScreens="true"
